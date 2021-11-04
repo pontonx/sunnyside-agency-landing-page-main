@@ -105,10 +105,29 @@ header button:hover{
     color: #8d8994;
 }
 .transform a {
+    position: relative;
     text-decoration: none;
     color: #2c323c;
     font-family: 'Fraunces', serif;
     font-weight: 900;
+    padding-left: 10px;
+    z-index: 0;
+    width: 150px;
+}
+
+#line {
+    position: absolute;
+    height: .6rem;
+    border-radius: 1rem;
+    background-color: #ffdcd1;
+    width: 150px;
+    z-index: 0;
+    margin: auto;
+    margin-top: 12px;
+}
+
+.transform a:hover {
+    filter: brightness(1.5);
 }
 
 .fruits {
@@ -231,6 +250,10 @@ footer li:hover {
     display: none;
 }
 
+.disabled {
+    display: none;
+}
+
 @media only screen and (max-width: 375px) {
     .second {
         width: 100%;
@@ -334,5 +357,70 @@ footer li:hover {
 
     footer {
         height: 300px;
+    }
+
+    #menu {
+        background-color: white;
+        margin: 0;
+        left: 5%;
+        position: absolute;
+        width: 90%;
+        height: 300px;
+        top:100px;
+    }
+
+    #menu ul {
+        list-style-type: none;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #menu li {
+        color: #83818c;
+        font-family: 'Barlow', sans-serif;
+    }
+    
+    #menu button {
+        font-family: 'Fraunces', serif;
+        border: none;
+        background-color: #fbd600;
+        width: 150px;
+        height: 50px;
+        border-radius: 40px;
+    }
+
+    #line {
+        position: absolute;
+        height: .6rem;
+        border-radius: 1rem;
+        background-color: #ffdcd1;
+        width: 150px;
+        z-index: 0;
+    }
+
+    .link {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .transform a {
+        position: relative;
+        text-decoration: none;
+        color: #2c323c;
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        text-align: center;
+        width: 100%;
+        padding-left: 0px;
+        z-index: 0;
+        width: 150px;
     }
 }

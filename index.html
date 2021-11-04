@@ -10,6 +10,10 @@
 
   <link rel="stylesheet" href="styles.css">
 
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+  <script src="hamburger.js"></script>
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -36,7 +40,10 @@
       <div>
         <h2>Transform your brand</h2>
         <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-        <a href="#">LEARN MORE</a>
+        <div class="link">
+          <div id="line" style="background-color: #fff6b9;"></div>
+          <a href="#">LEARN MORE</a>
+        </div>
       </div>
     </article>
     <img src="images/desktop/image-transform.jpg" alt="egg" id="egg">
@@ -45,7 +52,10 @@
       <div>
         <h2>Stand out to the right audience</h2>
         <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
-        <a href="#">LEARN MORE</a>
+        <div class="link">
+          <div id="line"></div>
+          <a href="#">LEARN MORE</a>
+        </div>
       </div>
     </article>
     <article class="fruits">
@@ -102,5 +112,15 @@
       <li><img src="images/icon-pinterest.svg" alt="pinterest"></li>
     </ul>
   </footer>
+
+  <section id="menu" class="disabled">
+    <ul>
+      <li>About</li>
+      <li>Services</li>
+      <li>Projects</li>
+      <li><button>CONTACT</button></li>
+    </ul>
+  </section>
+  <script src="hamburger.js"></script>
 </body>
 </html>
